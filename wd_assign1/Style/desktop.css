@@ -1,0 +1,160 @@
+@media screen and (min-width: 1024px) { 
+body {
+  font-family: Arial;
+}
+
+header {
+  height: 70%;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: #03C0C1;
+}
+
+header:before {
+  position: absolute;
+}
+
+header:after {
+  background: white;
+  position: absolute;
+}
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+
+.header-title {
+  animation-delay: .8s;
+  color: black;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-64px) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #a7a7a7;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #cdcdcd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+aside {
+  float: right;
+  margin-left:20px;
+  padding: 0px;
+}
+
+#container {
+ width:100%;
+}
+
+.music-list {
+ float:left;
+ width:50%;
+}
+
+.bolded { 
+font-weight: bold; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+  font-weight: normal;
+}
+
+img {
+  width: 1224.57px;
+  height: 301.23px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+}
+
+table, th, td {
+  border:1px solid white;
+  border-collapse: collapse;
+  line-height:35.5px;
+  text-align: left;
+}
+
+footer {
+   padding: 3px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align:center;
+}
+}

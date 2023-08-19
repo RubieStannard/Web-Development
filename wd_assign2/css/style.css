@@ -1,0 +1,131 @@
+body {
+  font-family: Arial;
+}
+
+/* Header image */
+.image1 {
+  padding: 10px;
+  text-align: center;
+  width: 829px;
+  height: 137px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #a7a7a7;
+}
+
+/* Changes the color of the cureent page */
+.active {
+  background-color: #a7a7a7;
+}
+  
+table {
+  width: 100%;
+}
+
+th {
+  height: 80px;
+}
+
+td {
+  text-align: center;
+}
+
+/* All h1 and h3 elements will be centered */
+h1, h3 {
+  text-align: center;
+}
+
+/* Images for menu */
+.image2 {
+  width: 112px;
+  height: 85px;
+  float: center;
+}
+
+.image3 {
+  width: 59px;
+  height: 112px;
+  float: center;
+}
+
+/* Floaed images for the favourites */
+.image4 {
+  width: 160px;
+  height: 121px;
+  float: left;    
+  margin: 15px 25px;
+}
+
+/* Images for supported cards for payment */
+.image6 {
+  width: 135px;
+  height: 29px;
+}
+
+/* Style for the register/order form */
+* {
+  box-sizing: border-box;
+}
+ 
+.container {  
+  padding: 50px;  
+  background-color: white;  
+}  
+
+input[type=text], input[type=password], textarea {   
+  padding: 15px;  
+  margin: 5px 0 22px 0; 
+  border: none;  
+  background: #e6e6e6;
+  width: 100%;  
+}  
+
+input[type=text]:focus, input[type=password]:focus {   
+  outline: none;  
+}  
+
+hr {  
+  border: solid black;
+  margin-bottom: 25px; 
+} 
+
+/* Style for the register/submit button */
+.registerbtn {  
+  background-color: black;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;     
+  width: 100%;  
+}  
+
+/* Change the link color on hover */
+.registerbtn:hover {  
+  background-color: #a7a7a7; 
+} 
+
+footer {
+   padding: 3px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align:center;
+}

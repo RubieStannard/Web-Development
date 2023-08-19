@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8" > 
+  <meta name="description" content="Web development" > 
+  <meta name="keywords"    content="second assignment" > 
+  <meta name="Rubie Stannard"      content="second assignment" >
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/script.js"></script>
+  <title>Web Development Assignment</title>  
+</head> 
+<body>
+<div class="header"><img src="images/cafe_logo.jpg" alt="Dreamy Cafe Logo" class="image1"></div>
+<div class="navbar">
+  <a href="index.html">Index</a>
+  <a href="register.html" class="active">Register</a>
+  <a href="order.html">Order</a>
+  <a href="features.html">Features</a>   
+</div>
+<form id="regform" method="post" action=" http://mercury.ict.swin.edu.au/it000000/formtest.php">
+<div class="container">  
+<h3>Registeration Form</h3>
+<hr>
+<div class="textinput">
+	<label for="fname"><b>First name:</b></label>   
+	<input id="fname" type="text" name="fname" placeholder= "First name" />
+</div>
+<div class="textinput">     
+	<label for="lname"><b>Last name:</b></label>    
+	<input id="lname" type="text" name="lname" placeholder="Last name" /> 
+</div>
+<div class="textinput">
+	<label for="sid">Username</label>
+	<input id="sid" type="text" name="id" />
+</div>  
+<div class="radioinput">
+	<label><b>Gender:</b></label>
+	<p><input type="radio" name="gender" value="M" id="genm" />
+	<label for="genm">Male</label></p>
+	<p><input type="radio" name="gender" value="F" id="genf"/>
+	<label for="genf">Female</label></p>
+	<p><input type="radio" name="gender" value="O" id="geno"/>
+	<label for="geno">Other</label></p> 
+</div>
+<div class="textinput">
+	<label for="phnum"><b>Phone number:</b></label>  
+	<input type="text" id="phnum" name="phnum" placeholder="### ### ####" maxlength="10" />  
+</div>
+	<label><b>Birthday:</b></label>
+	<p><input type="date" id="birthday" name="birthday"></p>
+<div class="textinput">
+	<label for="email"><b>Email:</b></label>  
+	<input type="text" id="email" placeholder="Enter email" name="email" />  
+</div>
+	<label><b>Favourite coffee:</b></label>
+	<p><select name="Coffee" id="coffee">
+	<option value="Cappuccino">Cappuccino</option>
+	<option value="Flat White">Flat white</option>
+	<option value="Latte">Latte</option>
+	<option value="Long black">Long black</option>
+	<option value="Espresso">Espresso</option>
+	<option value="Chai">Spiced chai latte</option>
+</select></p>
+<div class="textinput">
+	<label for="pwd1"><b>Password:</b></label>  
+	<input type="password" id="pwd1" placeholder="Enter password" name="pwd1" pattern ="^[a-zA-Z ]+$" />  
+</div>
+<div class="textinput">
+	<label for="pwd2"><b>Retype password:</b></label>  
+	<input type="password" id="pwd2" placeholder="Retype password" name="pwd2" pattern ="^[a-zA-Z ]+$" /> 
+</div>
+<div>
+	<label><b>How did you hear about us?</b></label> 
+<p><input type="checkbox" id="option1" name="option1" value="Word">
+<label for="option1">Word of mouth</label><br>
+<input type="checkbox" id="option2" name="option2" value="Search">
+<label for="option2">Search engine</label><br>
+<input type="checkbox" id="option3" name="option3" value="Social">
+<label for="option3">Social media</label><br><br></p>
+</div>
+<hr>
+	<div class="buttoninput">
+	<button type="submit" class="registerbtn">Register</button> 
+	</div> 
+</div>  
+</form>  
+<footer>
+	<p><em>&copy; 2022 Dreamy Cafe All Rights Reserved</em></p>
+</footer>
+</body> 
+</html>

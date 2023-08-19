@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8" > 
+  <meta name="description" content="Web development" > 
+  <meta name="keywords"    content="second assignment" > 
+  <meta name="Rubie Stannard"      content="second assignment" >
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/script.js"></script>
+  <title>Web Development Assignment</title>   
+</head> 
+<body>
+<div class="header"><img src="images/cafe_logo.jpg" alt="Dreamy Cafe Logo" class="image1"></div>
+<div class="navbar">
+  <a href="index.html">Index</a>
+  <a href="register.html">Register</a>
+  <a href="order.html" class="active">Order</a>
+  <a href="features.html">Features</a>   
+</div>
+<form id="regform" method="post" action=" http://mercury.ict.swin.edu.au/it000000/formtest.php">
+<div class="container">  
+<h3>Order Form</h3>
+<hr>
+<div class="textinput">
+	<label><b>Full name:</b></label>   
+	<input type="text" name="fullname" placeholder= "Full name" required />
+</div>
+<div class="radioinput">
+	<label><b>Delivery or pickup?</b></label>
+	<p><input type="radio" name="deliver" value="D" id="deliver" onclick="showDiv('toggle')" />
+	<label for="deliverD">Delivery</label></p>
+	<p><input type="radio" name="deliver" value="P" id="pickup"/>
+	<label for="pickup">Pickup</label></p>
+</div>
+<div id="toggle" style="display:none">
+<label for="address"><b>Delivery address:</b></label>  
+<input type="text" placeholder="Street Address" name="address1" required /> 
+<input type="text" placeholder="City" name="address2" required /> 
+<input type="text" placeholder="State" name="address3" required />
+<input type="text" placeholder="Post Code" id="pstcode" name="postcode" />
+<input type="text" placeholder="Country" name="address4" required />
+</div>
+<div class="radioinput">
+	<label><b>Billing address same as delivery address?</b></label>
+	<p><input type="radio" name="same" value="Y" id="yes" />
+	<label for="yes">Yes</label></p>
+	<p><input type="radio" name="same" value="N" id="no"/>
+	<label for="no">No</label></p>
+</div>
+<label for="billingaddress"><b>Billing address:</b></label> 
+<input type="text" placeholder="Street Address" name="address" required /> 
+<input type="text" placeholder="City" name="address" required /> 
+<input type="text" placeholder="State" name="address" required />
+<input type="text" placeholder="Post Code" id="pstcod" name="pstcod" />
+<input type="text" placeholder="Country" name="address" required />
+<div class="textinput">
+	<label for="phnum"><b>Contact number:</b></label>  
+	<input type="text" id="phnum" name="phnum" placeholder="### ### ####" maxlength="10" />  
+</div>
+<div class="textinput">
+	<label for="email"><b>Email:</b></label>  
+	<input type="text" id="email" placeholder="Enter email for receipt" name="email" />  
+</div>
+<div class="radioinput">
+	<label><b>Pay online or pickup:</b></label>
+	<p><input type="radio" name="pay" value="O" id="payO" onclick="showDiv('toggle1')"/>
+	<label for="payO">Online</label></p>
+	<p><input type="radio" name="pay" value="P" id="payP"/>
+	<label for="payP">Pickup</label></p> 
+</div>
+<div id="toggle1" style="display:none"><h3>Payment</h3>
+<hr>
+<label><b>Accepted cards</b></label> 
+<p><img src="images/cred_card.png" alt="Credit cards" class="image6"></p>
+<div class="textinput">
+	<label><b>Card name:</b></label>  
+	<input type="text" id="payment" placeholder="Name" name="number" required />  
+</div>
+<div class="textinput">
+	<label><b>Credit card number:</b></label>  
+	<input type="text" id="payment" placeholder="0000 0000 0000 0000" maxlength="16" required />  
+</div>
+<div class="textinput">
+	<label><b>Expiry date:</b></label>  
+	<input type="text" id="payment" placeholder="MM/YY" name="date" required />  
+</div>
+<div class="textinput">
+	<label><b>CVV:</b></label>  
+	<input type="text" id="payment" placeholder="CVV" name="cvv" required />  
+</div> 
+</div>
+<hr>
+	<div class="buttoninput">
+	<button type="submit" class="registerbtn">Order</button> 
+	</div> 
+</div>  
+</form>
+<footer>
+	<p><em>&copy; 2022 Dreamy Cafe All Rights Reserved</em></p>
+</footer>
+</body> 
+</html>

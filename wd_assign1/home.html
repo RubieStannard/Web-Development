@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8" > 
+  <meta name="description" content="Web development" > 
+  <meta name="keywords"    content="HTML assignment" > 
+  <meta name="Rubie Stannard"      content="HTML assignment" > 
+  <title>Web Development Assignment</title>
+  <link rel="stylesheet" type="text/css" href="mobile.css"> 
+  <link rel="stylesheet" type="text/css" href="desktop.css">
+</head> 
+<body>
+<style>
+body {
+  font-family: Arial;
+}
+
+header {
+  height: 70%;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: #03C0C1;
+}
+
+header:before {
+  position: absolute;
+}
+
+header:after {
+  background: white;
+  position: absolute;
+}
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+
+.header-title {
+  animation-delay: .8s;
+  color: black;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-64px) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #a7a7a7;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #cdcdcd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+   padding: 3px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align:center;
+}
+</style>
+  <header>
+  <section class="header-content">
+    <h1 class="header-title animate-pop-in">Web Development Assignment</h1>
+  </section>
+</header>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Section One
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutme.html">About me</a>
+      <a href="likes.html">Likes</a>
+	  <a href="timetable.html">Timetable</a>
+    </div>
+  </div>
+  <a href="sectiontwo.html">Section Two</a>
+  <a href="animations.html">Animations</a>
+  <a href="feedback.html">Feedback</a>   
+</div>
+<h2 style="text-align:center;">Assignment One</h2>
+
+<h3>Purpose of the Assignment</h3>
+<p>An individual assignment to familiarise students with the techniques and skills involved in creating webpages using validated HTML5 and validated CSS; loading and testing the website on the server; and demonstrating an understanding of HTML5 elements and attributes, CSS selectors and properties and their proper use. Moreover, it is to provide students with an appreciation of the importance of the separation of structured content from presentation as discussed in the lectures.</p>
+<p>To highlight this, the assignment is specified and evaluated in three sections:</p>
+	<ul>
+		<li>The development of validated HTML5 webpages</li>
+		<li>The development of validated CSS files to present webpages on various devices</li>
+		<li>The implementation of CSS animations</li>
+	</ul>
+
+<h3>Section One: HTML5</h3>
+<p>Create at least <b>THREE</b> web pages using HTML5 and with at least <b>one image on each web pages, three images in total minimum</b>. All images must be original, meaning you own those images.</p>
+<p>The Information content on these webpages should be information about you. Please make sure to include:</p>
+	<ul>
+		<li>Demographic information about you</li>
+		<li>A description of your hometown</li>
+		<li>A great achievement in your life (so far)</li>
+		<li>A list of your favourite books, music and films or games</li>
+		<li>A HTML table to present your weekly academic timetable at Swinburne</li>
+	</ul>
+<p>The following HTML elements <b>MUST</b> be used in this assignment. Some will be used on all pages while others might only be used once:</p>
+General elements
+	<ul>
+		<li><span style="color:#4b77c6">head, title, meta, body</span></li>
+	</ul>
+Structural elements
+	<ul>
+		<li><span style="color:#4b77c6">header, nav, main, footer, aside, article, section</span></li>
+	</ul>
+Content elements
+	<ul>
+		<li><span style="color:#4b77c6">h#, p, hr /, ul, ol, table, img, a</span></li>
+	</ul>
+Form elements
+	<ul>
+		<li><span style="color:#4b77c6">form, input, label</span></li>
+	</ul>
+<p>Other HTML elements such as <span style="color:#4b77c6">div, span, blockquote, strong, em, fieldset</span> and more can be used as necessary and appropriate for the content.</p>
+<p>A menu must be created on each web page that allows users to navigate through all the webpages on your website. This menu must be properly styled using CSS.</p>
+<p>Please organise your HTML code properly and annotate the source code with comments as necessary.</p>
+
+<h3>Section Two: Basic CSS</h3>
+<p>Develop <b>TWO</b> CSS files that style the web pages, one for a desktop and another for a mobile phone. The webpages must be styled to suit the corresponding device, e.g., the layout, font size and the sizes of the major components of the webpages.</p>
+<p>Demonstrate a range of selectors, including but not limited to:</p>
+	<ul>
+		<li>element<span style="color:white">_______</span><em>e.g., h1 {}, p {}</em></li>
+		<li>class<span style="color:white">_______</span><em>e.g., .image {}, .highlighted {}</em></li>
+		<li>id<span style="color:white">_______</span><em>e.g.,#tbName {}</em></li>
+		<li>grouping<span style="color:white">_______</span><em>e.g., h1, h2, h3 {}</em></li>
+		<li>contextual<span style="color:white">_______</span><em>e.g., ul li {}</em></li>
+		<li>pseudo-classes<span style="color:white">_______</span><em>e.g., :hover {}</em></li>
+	</ul>
+<p>Demonstrate the following groups of CSS properties:</p>
+	<ul>
+		<li>Menu<span style="color:white">_______</span><em>e.g., style a navigator that contains links to all web pages</em></li>
+		<li>Web typography<span style="color:white">_______</span><em>e.g., fonts, colors, text alignment</em></li>
+		<li>Box model and visual formatting<span style="color:white">_______</span><em>e.g., border, margin, padding, width, height, background image</em></li>
+		<li>Liquid page layout<span style="color:white">_______</span><em>i.e., page layout adapts as you resize the browser window</em></li>
+	</ul>
+<p>Use of other CSS selectors and CSS properties are encouraged, as necessary and appropriate for styling the webpages.</p>
+<p>Please properly organise your CSS code and include comments within your CSS code as needed, e.g., /* banner style */.</p>
+<p>Creativity is strongly encouraged in the web site design. Creative designs will be rewarded with bonus marks.</p>
+
+<h3>Section Three: CSS Animations</h3>
+<p>Implement 2 different CSS animations. There are many types of CSS animations. Take your pick and make sure they are applied to appropriate HTML elements. Feel free to use Google or any source of information you deem appropriate to look up the code you need to implement the CSS animations.</p>
+<p>Create a fourth page named <span style="font-family:Courier New">animations.html</span> and incorporate it into the menu navigator. On this webpage, list the animations that you have implemented and provides hyperlinks to where the animations are implemented.</p>
+
+<h3>Submission</h3>
+<p><b>Before submitting</b> the assignment, please ensure that you have completed or considered the following:</p>
+	<ul>
+		<li>Check if you have fulfilled the requirements and avoided the deductions in the Marking Scheme</li>
+		<li>Check the Canvas for announcements related to the assignment</li>
+		<li>The assignment is your original work. If your assignment is not your original work, your result will be zero marks for this assignment</li>
+		<li>Validate and test your webpages on the Mercury server. If your assignment cannot be fully validated or properly displayed on the Mercury server, penalties will apply</li>
+		<li>Ensure that you submit before the due time to avoid penalties</li>
+	</ul>
+<footer>
+<p><em>&copy; 2022 Rubie Stannard All Rights Reserved</em></p>
+</footer>
+</body> 
+</html>
